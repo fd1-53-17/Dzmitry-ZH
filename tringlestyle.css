@@ -42,3 +42,14 @@
     width: 0;
     height: 0;
 }
+
+.circle {
+    border-top: 25px solid red;
+    border-bottom: 25px solid green;
+    border-right: 25px solid blue;
+    border-left: 25px solid yellow;
+    border-radius:25px;
+    width: 0;
+    height: 0;
+}
+
