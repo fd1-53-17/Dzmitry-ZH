@@ -1,0 +1,169 @@
+#page {
+    width: 74%; /* 900px / 1216.21621px */
+    height: 98%; /* 620px / 632.65306px */
+    background-color: rgb(255, 187, 64);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+table {
+    width: 77.77777%; /* 700px / 900px */
+    height: 80.645116%; /* 500px / 620px */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+
+}
+
+/*tr, td {*/
+    /*border: 1px solid black;*/
+    /*width: 200px;*/
+    /*height: 70px;*/
+/*}*/
+
+/*.back {*/
+    /*width: 200px;*/
+    /*height: 70px;*/
+    /*background-color: black;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+.left_top {
+    background: url("../resources/ramka_up_left_corner.png") no-repeat,
+    linear-gradient(to right, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px, transparent 25%),
+    linear-gradient(to bottom, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px);
+
+
+}
+
+.right_top {
+    background: url("../resources/ramka_up_right_corner.png") 100% 0 no-repeat,
+    linear-gradient(to bottom, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px, transparent 25%),
+    linear-gradient(to left, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px);
+}
+
+.left_bottom {
+    background: url("../resources/ramka_down_left_corner.png") 0% 100% no-repeat,
+    linear-gradient(to top, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px, transparent 25%),
+    linear-gradient(to right, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px);
+
+}
+
+.right_bottom {
+    background: url("../resources/ramka_down_right_corner.png") 100% 100% no-repeat,
+    linear-gradient(to top, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px, transparent 25%),
+    linear-gradient(to left, black 0px, black 5px,
+            white 6px, white 8px,
+            black 9px, black 13px,
+            white 14px, white 23px,
+            black 23px, black 28px,
+            white 28px, white 31px,
+            black 31px, black 36px,
+            white 37px, white 40px);
+}
+
+.up_top {
+    background: linear-gradient(to bottom, black 0px, black 5px,
+    white 6px, white 8px,
+    black 9px, black 13px,
+    white 14px, white 23px,
+    black 23px, black 28px,
+    white 28px, white 31px,
+    black 31px, black 36px,
+    white 37px, white 40px);
+
+}
+
+.down_bottom {
+    background: linear-gradient(to top, black 0px, black 5px,
+    white 6px, white 8px,
+    black 9px, black 13px,
+    white 14px, white 23px,
+    black 23px, black 28px,
+    white 28px, white 31px,
+    black 31px, black 36px,
+    white 37px, white 40px);
+
+}
+
+.left_center {
+    background: linear-gradient(to right, black 0px, black 5px,
+    white 6px, white 8px,
+    black 9px, black 13px,
+    white 14px, white 23px,
+    black 23px, black 28px,
+    white 28px, white 31px,
+    black 31px, black 36px,
+    white 37px, white 40px);
+}
+
+.right_center {
+
+    background: linear-gradient(to left, black 0px, black 5px,
+    white 6px, white 8px,
+    black 9px, black 13px,
+    white 14px, white 23px,
+    black 23px, black 28px,
+    white 28px, white 31px,
+    black 31px, black 36px,
+    white 37px, white 40px);
+
+}

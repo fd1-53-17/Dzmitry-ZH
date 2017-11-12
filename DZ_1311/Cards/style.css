@@ -1,0 +1,30 @@
+
+.image{
+    background-image: url("cards2.png");
+    width: 500px;
+    height: 500px;
+}
+
+.image.buba3{
+    width: 140px;
+    height: 190px;
+    background-position:-290px -200px;
+    overflow: hidden;
+    float: left;
+}
+
+.image.tref7{
+    width: 140px;
+    height: 190px;
+    background-position:-150px -970px;
+    overflow: hidden;
+    float: left;
+}
+
+.image.wormA{
+    width: 140px;
+    height: 190px;
+    background-position:-430px -2325px;
+    overflow: hidden;
+    float: left;
+}

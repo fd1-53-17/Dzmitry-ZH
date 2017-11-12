@@ -1,0 +1,116 @@
+#page {
+    width: 74%;/* 900px / 1216.216516216px */
+    height: 100%;/* 700px / 700px */
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+table {
+    width: 67%; /* 603px / 900px */
+    height: 86.142857%; /* 603px / 700px */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 10vw; /* 67px / 603px */
+    height: 10vh; /* 67px / 603px */
+    border: 1px black solid;
+    text-align: center;
+}
+
+.back {
+    width: 67.164179%;/* 45px / 67px */
+    height: 67.164179%;/* 45px / 67px */
+    background-repeat: no-repeat;
+    /*overflow: hidden;*/
+    margin: 0 auto;
+}
+
+
+.first td {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+
+.number {
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+}
+
+.white {
+    background-color: #d7a564;
+}
+
+.black {
+    background-color: #775A30;
+}
+
+
+.peshka {
+    background-image: url("chess.png");
+    background-position: -265px 0px;
+}
+
+.ladya {
+    background-image: url("chess.png");
+    background-position: -105px 0px;
+
+}
+
+.horse {
+    background-image: url("chess.png");
+    background-position: -210px 0px;
+}
+
+.elephant {
+    background-image: url("chess.png");
+    background-position: -155px 0px;
+}
+
+.ferz {
+    background-image: url("chess.png");
+    background-position: -50px 0px;
+}
+
+.king {
+    background-image: url("chess.png");
+    background-position: 0px 0px;
+}
+
+.peshkawh{
+    background-image: url("chess.png");
+    background-position: -265px -50px;
+}
+
+.ladyawh{
+    background-image: url("chess.png");
+    background-position: -105px -50px;
+}
+
+.horsewh{
+    background-image: url("chess.png");
+    background-position: -210px -50px;
+}
+
+.elephantwh{
+    background-image: url("chess.png");
+    background-position: -155px -50px;
+}
+
+.ferzwh{
+    background-image: url("chess.png");
+    background-position: -50px -50px;
+}
+
+.kingwh{
+    background-image: url("chess.png");
+    background-position: 0px -50px;
+}

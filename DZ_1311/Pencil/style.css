@@ -1,0 +1,106 @@
+
+body {
+    height: 100vh; /* обязательно нужно указывать высоту, т.к. при пустом документе будет не верно отображаться */
+    background:  repeating-linear-gradient(to top, #6e6e6e 0, #6e6e6e 1px, transparent 1px, transparent 30px),
+    repeating-linear-gradient(to right, #6e6e6e 0, #6e6e6e 1px, transparent 1px, transparent 30px);
+
+}
+
+.pencil1, .pencil2{
+    position: absolute;
+}
+
+.sterka{
+    width: 8vw;
+    height: 100px;
+   background-color: purple;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-bottom-left-radius:30px;
+    border-top-left-radius:30px;
+    float: left;
+}
+
+.behind{
+    width: 7vw;
+    height: 100px;
+    background: linear-gradient(to bottom, #9c9c9c, #d7d7d7, #9c9c9c);
+    margin-top: 50px;
+    float: left;
+
+}
+.pencilhorizont{
+    width: 50vw;
+    height: 100px;
+    background: linear-gradient(to bottom, #a87c29,yellow, #a87c29);
+    margin-top: 50px;
+    float: left;
+}
+
+.wood{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #eb8477;
+    border-bottom: 50px solid transparent;
+    margin-top: 50px;
+    float: left;
+}
+
+.dzuba{
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #000000;
+    border-bottom: 5px solid transparent;
+    margin-left: -10px;
+    margin-top: 95.5px;
+    float: left;
+
+}
+
+
+.sterka2{
+    width: 100px;
+    height: 10vh;
+    background-color: purple;
+    margin-left: 250px;
+    margin-top: 170px;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+}
+
+.behind2{
+    width: 100px;
+    height: 7vh;
+    background: linear-gradient(to bottom, #9c9c9c, #d7d7d7, #9c9c9c);
+    margin-left: 250px;
+}
+
+.pencilhorizont2{
+    width: 100px;
+    height: 40vh;
+    background: linear-gradient(to right,yellow 0%, yellow 33%,#a87c29 33%, #a87c29 66% ,yellow 66%,yellow 100%);
+    margin-left: 250px;
+}
+
+.wood2{
+    width: 0;
+    height: 0;
+    border-top: 70px solid #EB8477;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin-left: 250px;
+}
+
+.dzuba2{
+    width: 0;
+    height: 0;
+    border-top: 10px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin-left: 293px;
+    margin-top: -10px;
+
+}
+
