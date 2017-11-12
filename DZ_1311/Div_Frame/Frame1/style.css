@@ -1,0 +1,43 @@
+#page{
+
+    width: 70vw;
+    height: 95vh;
+   // background-color: rgba(0, 0, 0, 0.39);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #9c9c9c;
+}
+
+.frame{
+    width: 60vw;
+    height: 81.42857vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background:
+            url("../resources/ramka_up_left_corner.png")left top no-repeat,
+            url("../resources/ramka_up_right_corner.png")right top no-repeat,
+            url("../resources/ramka_down_left_corner.png")left bottom no-repeat,
+            url("../resources/ramka_down_right_corner.png")right bottom no-repeat,
+            url("../resources/ramka_left.png")left center repeat-y,
+            url("../resources/ramka_left.png")right center repeat-y,
+            url("../resources/ramka_up_down.png")top center repeat-x,
+            url("../resources/ramka_up_down.png")bottom center repeat-x;
+    background-color:white;
+
+}
+
+.text{
+    position: absolute;
+    top:10%;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
