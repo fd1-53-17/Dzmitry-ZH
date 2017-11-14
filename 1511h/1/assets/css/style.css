@@ -1,0 +1,168 @@
+#page {
+    width: 140vmin; /* 900px / 1216.216516216px */
+    height: 110vmin; /* 700px / 700px */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #9c9c9c;
+}
+
+.chess {
+    width: 100vmin;
+    height: 95vmin;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    outline: 0.5vmin solid black;
+}
+
+.left {
+    float: left;
+    width: 5vmin; /* 30px */
+    height: 95vmin; /* 566px */
+    margin-left: 2.5vmin;
+    margin-top: 2.5vmin;
+    /*background-color: #6b2327;*/
+}
+
+.first {
+    width: 10.5vmin;
+    height: 95vmin;
+    float: left;
+    margin-top: 2.5vmin;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*margin-top: -301.5px;*/
+    /*margin-left: 148.5px;*/
+    /*border: 1px solid black;*/
+}
+
+.none1 {
+    width: 5vmin; /* 30px */
+    height: 5vmin; /* 30px */
+    /*margin-left: 37px;*/
+}
+
+.none {
+    width: 10.5vmin; /* 67px */
+    height: 5vmin; /* 30px */
+    /*background-color: #6b2327;*/
+    text-align: center;
+    font-size: 3.8vmin;
+    color: black;
+}
+
+.back {
+    width: 5vmin;
+    height: 10.5vmin;
+    /*margin-left: 37px;*/
+    text-align: center;
+    font-size: 3.8vmin;
+    color: black;
+}
+
+.white {
+    width: 10.5vmin;
+    height: 10.5vmin;
+    background-color: #deddd9;
+}
+
+.black {
+    width: 10.5vmin;
+    height: 10.5vmin;
+    background-color: rgba(91, 90, 88, 0.86);
+}
+
+.peshka {
+    background-image: url("../resources/chess.png");
+    background-position:-47vmin 0.5vmin; /*-300px 5px;*/
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.ladya {
+    background-image: url("../resources/chess.png");
+    background-position: -18vmin 0.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.horse {
+
+    background-image: url("../resources/chess.png");
+    background-position: -37vmin 0.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+
+}
+
+.elephant {
+    background-image: url("../resources/chess.png");
+    background-position: -27.5vmin 1.4vmin; /*8px;*/
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.ferz {
+    background-image: url("../resources/chess.png");
+    background-position: -8vmin 1.4vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.king {
+    background-image: url("../resources/chess.png");
+    background-position: 1.5vmin 1.4vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.peshkawh {
+    background-image: url("../resources/chess.png");
+    background-position: -47vmin -8.5vmin; /*55px;*/
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.ladyawh {
+    background-image: url("../resources/chess.png");
+    background-position: -18vmin -8.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.horsewh {
+     background-image: url("../resources/chess.png");
+     background-position: -37vmin -8.5vmin;
+     background-repeat: no-repeat;
+     background-size: 55vmin;
+
+ }
+
+.elephantwh {
+    background-image: url("../resources/chess.png");
+    background-position: -27.5vmin -8.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.ferzwh {
+    background-image: url("../resources/chess.png");
+    background-position: -8.5vmin -8.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
+
+.kingwh {
+    background-image: url("../resources/chess.png");
+    background-position: 1.5vmin -8.5vmin;
+    background-repeat: no-repeat;
+    background-size: 55vmin;
+}
