@@ -1,0 +1,44 @@
+.row{
+    clear: left;
+    width: 30px;
+}
+div{
+    float: left;
+    width: 10px;
+}
+
+.second{
+    float: right;
+}
+
+.third{
+    float: right;
+}
+
+ .first{
+     float: right;
+ }
+
+ .left{
+     float: left;
+ }
+.right{
+    float: right;
+}
+ .left2{
+     float: right;
+ }
+.right2{
+    float: right;
+}
+
+.lift{
+    margin-left: 10px;
+}
+.reght {
+    margin-left: -20px;
+}
+
+.left3{
+    margin-left: -20px;
+}
