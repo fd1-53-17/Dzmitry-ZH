@@ -1,0 +1,78 @@
+#page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 78.30342%;/*960px / 1226px*/
+    height: 95%; /*665px / 700px*/
+    /*font-size: 100%;*/
+    min-width: 600px;
+}
+
+.top{
+    width: 100%; /*960px / 960px*/
+    height: 12%;/*80px / 665px*/
+    background-color: #add8e6;
+}
+
+H1 {
+    color: #0000ff;
+    text-align: center;
+    margin: 0;
+    font-size: 2.2838vw; /* 28px / 1226px */
+    text-transform: uppercase;
+    padding-top:2%; /*26px*/
+}
+
+.left{
+    width:200px;
+    height: 440px;
+    background-color: #f0e68c;
+    float: left;
+}
+
+
+.left p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.main{
+    width: 79.1666%; /*760px / 960px*/
+    height: 72.8%;
+    background-color: white;
+    float: right;
+    background-image: url("../resources/ball.png");
+    background-position: 100% 0;
+    background-size: 13.157%;/*100px / 760px*/
+    background-repeat: repeat-y;
+}
+
+.main H3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2%;
+    font-size: 2.2838vw; /* 28px / 1226px */
+}
+
+.main p{
+    font-size:1.63132vw;/* 20px / 1226px */
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.bottom{
+    clear: both;
+    background-color: #add8e6;
+    width: 100%; /*960px / 960px*/
+    height: 12%;/*80px / 665px*/
+}
+
+.image {
+    width: 26.3157%;/*200px / 760px*/
+    float: left;
+    margin: 0 2%;
+}
