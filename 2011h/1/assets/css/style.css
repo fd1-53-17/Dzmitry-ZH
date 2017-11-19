@@ -1,0 +1,29 @@
+.image{
+    background-image: url("../resources/cards2.png");
+    width: 140px;
+    height: 190px;
+}
+
+.buba3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-position: -290px -200px;
+    z-index: 3;
+}
+
+.tref7{
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    background-position: -145px -970px;;
+    z-index: 2;
+}
+
+.heartsA{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    background-position:-430px -2325px;
+    z-index: 1;
+}
