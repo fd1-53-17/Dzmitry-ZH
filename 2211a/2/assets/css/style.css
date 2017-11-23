@@ -1,0 +1,45 @@
+.content{
+    width: 560px;
+    height: 500px;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.bem{
+    width: 550px;
+    padding: 5px;
+    height: 30px;
+    background-color: #eaeae9;
+    font-family: monospace;
+    line-height: 30px;
+    margin-bottom: 20px;
+    outline: 1px solid lightgrey;
+}
+
+p{
+    margin: 0;
+    line-height: 20px;
+}
+
+.scroll {
+    height: 40px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.color{
+    color: #9dc3c1;
+}
+
+.host{
+    color: #c3b7a5;
+    font-style: italic;
+}

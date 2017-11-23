@@ -1,0 +1,125 @@
+#page {
+    width: 435px;
+    height: 480px;
+    background-color: #e3e3e1;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+header {
+    width: 380px;
+    height: 60px;
+    background-color: #999999;
+    font-family: serif;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -190px;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-size: 25px;
+    color: white;
+    line-height: 60px;
+    padding-left: 40px;
+}
+
+.list {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    width: 180px;
+    color: #9a929b;
+}
+
+.left_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right_top {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.left_bottom {
+    position: absolute;
+    top: 210px;
+}
+
+.right_bottom {
+    position: absolute;
+    top: 210px;
+    left: 200px;
+}
+
+.left_top li:nth-of-type(n+1):not(:nth-of-type(n+6)),
+.right_top li:nth-of-type(n+3):not(:nth-of-type(n+6)),
+.left_bottom li:nth-of-type(n+3):not(:nth-of-type(n+4)),
+.right_bottom li:nth-of-type(n+3):not(:nth-of-type(n+5)) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.right_top li:nth-of-type(n+1):not(:nth-of-type(n+3)),
+.left_bottom li:nth-of-type(n+1):not(:nth-of-type(n+3)),
+.right_bottom li:nth-of-type(n+1):not(:nth-of-type(n+3)) {
+    border-bottom: 1px solid rgba(211, 211, 211, 0);
+}
+
+.left_top li:first-child,
+.right_top li:first-child,
+.left_bottom li:first-child,
+.right_bottom li:first-child {
+    font-weight: 900;
+    color: #362931;
+}
+
+.left_top li:nth-of-type(2) {
+    color: #68556a;
+}
+
+.left_top li:nth-of-type(2)::before {
+    font-family: untitled-font-1;
+    content: "a";
+    padding-right: 5px;
+
+}
+
+.right_top li:nth-of-type(2),
+.left_bottom li:nth-of-type(2),
+.right_bottom li:nth-of-type(2) {
+    background-color: #a27eae;
+    color: #f9e9fa;
+    border-radius: 5px;
+}
+
+.right_top li:last-child::after {
+    content: "?";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #63456d;
+    color: #e3e3e1;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 65px;
+}

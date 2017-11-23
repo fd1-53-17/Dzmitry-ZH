@@ -1,0 +1,43 @@
+.square{
+    width: 400px;
+    height: 400px;
+    background-color: #e51875;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #fab250;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 200px;
+}
+
+.horizontal{
+    width:50px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -2.5px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.vertical{
+    width:5px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -2.5px;
+}
+

@@ -1,0 +1,54 @@
+body{
+    background-color: #278a89;
+}
+
+#page{
+    width: 55vw;
+    height: 90vh;
+    position: relative;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    top: 3vh;
+    outline: 0.5vw solid black;
+
+}
+
+.red, .blue, .green, .yellow{
+    position: absolute;
+    outline: 0.5vw solid black;
+}
+
+.red{
+    width: 12vw;
+    height: 15vh;
+    background-color: red;
+    top: 5vh;
+    left: 5vw;
+
+}
+
+.blue{
+    width: 12vw;
+    height: 50vh;
+    background-color: blue;
+    top: 30vh;
+    left: 5vw;
+}
+
+.green{
+    width: 25vw;
+    height: 45vh;
+    background-color: green;
+    top: 5vh;
+    left: 25vw;
+}
+
+.yellow{
+    width: 25vw;
+    height: 20vh;
+    background-color: yellow;
+    top: 60vh;
+    left: 25vw;
+
+}

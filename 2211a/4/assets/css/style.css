@@ -1,0 +1,40 @@
+#page
+{
+    width: 265px;
+    height: 470px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+    outline: 1px solid black;
+}
+
+ul{
+    width:245px;
+    height: 470px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li{
+    width:225px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: -25px;
+    left:50%;
+    margin-left: -112.5px;
+    margin-top: 2px;
+    color: #4a79b5;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+ul li:hover{
+    background-color: #4a79b5;
+    color: white;
+}

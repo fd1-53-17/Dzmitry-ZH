@@ -1,0 +1,59 @@
+#page {
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    outline: 2px solid black;
+}
+
+.left {
+    width: 400px;
+    height: 100px;
+    float: left;
+    font-family: untitled-font-2;
+
+}
+
+.right {
+    width: 200px;
+    height: 120px;
+    float: right;
+
+}
+
+.discount {
+    width: 130px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px dashed red;
+    border-radius: 10px;
+}
+
+.discount > h2 {
+    margin: 5px 5px 0;
+    text-align: center;
+}
+
+.discount::after{
+    content: "12%";
+    font-size:45px;
+    font-weight: 900;
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+.title {
+    margin: 10px;
+}
+
+.left::after {
+    content: "a Действует до 06 декабря";
+    color: red;
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+    font-weight: 900;
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="content">
+    <H1>Creating a chart</H1>
+
+    <p>To create a chart we need to istantiate the <span class="chart">Chart</span> class. To do this, we need
+        to pass in tne 2nd context of where we want to draw the chart.Here's an
+        example.
+    </p><br>
+
+    <div class="chart">&lt;canvas <span class="green">id=</span><span class="red">&quot;myChart&quot;</span>
+        <span class="green">width=</span><span class="red">&quot;400&quot;</span>
+        <span class="green">height=</span><span class="red">&quot;400&quot;</span>&gt;
+        &lt;/canvas&gt;
+    </div>
+    <div class="chart bigheight"><span class="comment">// Get the context of the canvas element we want to select</span><br>
+        <span class="bold">var</span> ctx = <span class="blue">document.</span>getElementById(<span class="red">&quot;myChart&quot;</span>).getContext(<span
+                class="red">&quot;2d&quot;</span>);<br>
+        <span class="bold">var</span> myNewChart = <span class="bold">new</span> Chart(ctx).PortalArea(data);
+    </div>
+
+    <p>We can also get the context of our canvas with jQuery. To do this we need to get the DOM node out of the jQuery collection,
+        and call the <span class="chart">getContext(&quot;2d&quot;)</span> method on that.
+    </p><br>
+
+    <div class="chart bigheight scroll"><span class="comment">// Get context with jQuery - using jQuery's .get() method.</span><br>
+        <span class="bold">var</span> ctx = $<span class="red">(&quot;#myChart&quot;)</span>.get(<span class="green">0</span>).getContext (<span class="red">&quot;2d&quot;</span>);<br>
+        <span class="comment">// This will get the first returned node in the jQuery collection</span><br>
+        <span class="bold">var</span> myNewChart = <span class="bold">new</span> Chart(ctx);
+
+    </div>
+
+</div>
+</body>
+</html>
