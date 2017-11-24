@@ -1,0 +1,38 @@
+#page{
+    width: 60vw;
+    height: 70vh;
+    background-color: #bdbdbd;
+    position: relative;
+    top: 3vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 7vw solid #1d6319;
+    border-left: 7vw solid transparent;
+    border-right: 7vw solid transparent;
+    position: absolute;
+    top: 30vh;
+    left: 7vw;
+}
+
+.triangle_big{
+    width: 0;
+    height: 0;
+    border-left: 7vw solid transparent;
+    border-right: 7vw solid transparent;
+    border-top: 15vw solid #1d6319;
+    position: absolute;
+    top: 15vh;
+    left: 22.5vw;
+}
+
+.triangle:last-child{
+    top: 30vh;
+    left: 39vw;
+
+}

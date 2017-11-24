@@ -1,0 +1,71 @@
+.content{
+    width: 490px;
+    height: 500px;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.chart{
+    width: 480px;
+    padding: 5px;
+    height: 30px;
+    background-color: #eaeae9;
+    font-family: monospace;
+    line-height: 30px;
+    outline: 1px solid lightgrey;
+    margin-bottom: 30px;
+}
+
+p{
+    margin: 0;
+    line-height: 20px;
+    color: gray;
+}
+
+.scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+    /*overflow-y: hidden;*/
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.green{
+    color:#5ca0b7;
+}
+
+.red{
+    color: #e095a0;
+}
+
+.comment{
+    color: #b1ada4;
+}
+
+.blue{
+    color: #7ba0be;
+}
+
+.bigheight{
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 15px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.bigheight + p{
+    margin-top: 30px;
+}
+
+.chart.bigheight:last-child{
+    height: 80px;
+    display: block;
+    margin: 0;
+}

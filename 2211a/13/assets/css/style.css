@@ -1,0 +1,103 @@
+.folder {
+    width: 600px;
+    height: 400px;
+    background-color: #cfa448;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.top {
+    width: 200px;
+    height: 40px;
+    background-color: #cfa448;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.file {
+    width: 500px;
+    height: 300px;
+    background-color: #e4e7e8;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid white;
+
+}
+
+.first{
+    bottom: 10px;
+    left: 50px;
+    z-index: 5;
+}
+
+.second{
+    bottom: 50px;
+    left: 50px;
+    z-index: 3;
+    transform: scale(0.95);
+}
+
+.third{
+    bottom: 90px;
+    left: 50px;
+    z-index: 1;
+    transform: scale(0.85);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.red {
+    background-color: #f44c50;
+    top: 5px;
+    left: 10px;
+}
+
+.orange {
+    background-color: #ffa814;
+    top: 5px;
+    left: 35px;
+}
+
+.green {
+    background-color: #38cc96;
+    top: 5px;
+    left: 60px;
+}
+
+.menu {
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(to top, #b2b4b5 0%, #b2b4b5 20%, #e4e7e8 20%, #e4e7e8 40%, #b2b4b5 40%, #b2b4b5 60%, #e4e7e8 60%, #e4e7e8 80%, #b2b4b5 80%);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.front {
+    width: 600px;
+    height:270px;
+    background-color: #ffcd59;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 10;
+}
+
+.folder:hover .first{
+    transform: translateX(25%);
+}

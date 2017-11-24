@@ -1,0 +1,36 @@
+.text {
+    width: 400px;
+    height: 150px;
+    background-color: #f5baac;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+}
+
+.text p {
+    font-size: 24px;
+    color: white;
+    margin: auto;
+    margin-left: 15px;
+}
+
+p {
+    width: 400px;
+    color: #a692a6;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.text::after{
+    content: "";
+   border-top: 45px solid #f5baac;
+    border-right: 25px solid transparent;
+    border-left:25px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 180px;
+    transform: skew(-40deg);
+}

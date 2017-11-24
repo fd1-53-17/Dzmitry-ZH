@@ -1,0 +1,88 @@
+.circle {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 20px solid black;
+    border-radius: 400px;
+    position: relative;
+}
+
+.eye {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 100px;
+    transform: rotate(135deg);
+}
+
+.left {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.right {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.smile{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 300px;
+    transform: rotate(-45deg);
+    top: 25px;
+    left: 30px;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.point.one{
+    top:120px;
+    left: 50px;
+}
+
+.point.two{
+    top:120px;
+    left: 170px;
+}
+
+.point.three{
+    top:120px;
+    left: 210px;
+}
+
+.point.four{
+    top:120px;
+    left: 330px;
+}
+
+.point.five{
+    top:175px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.point.six{
+    top:175px;
+    left: 30px;
+    transform: rotate(180deg);
+}
