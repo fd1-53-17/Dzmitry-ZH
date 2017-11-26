@@ -103,7 +103,7 @@
 }
 
  .first:hover, .second:hover, .third:hover{
-    transform: translateX(50%) scale(1.5);
+    transform: translateX(50%) scale(1.09);
 
 }
 
