@@ -31,6 +31,10 @@
 
 }
 
+.first, .second, .third{
+    transition: transform 1s;
+}
+
 .first{
     bottom: 10px;
     left: 50px;
@@ -98,6 +102,8 @@
     z-index: 10;
 }
 
-.folder:hover .first{
-    transform: translateX(25%);
+ .first:hover, .second:hover, .third:hover{
+    transform: translateX(50%) scale(1.5);
+
 }
+
