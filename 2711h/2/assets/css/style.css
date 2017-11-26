@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+.saber{
+    position: relative;
+    top: 220px;
+    left: 50px;
+    width: 350px;
+    height: 100px;
+    background:url("../resources/img_85_1.png") no-repeat;
+    background-size: contain;
+    z-index: 5;
+}
+
+.light{
+    width: 0;
+    height: 15px;
+    position: absolute;
+    top: 251px;
+    left: 395px;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition:1.5s;
+
+}
+
+.saber:hover+.light{
+    width: 660px;
+    height: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px 10px red;
+    transition: 1.5s;
+}
