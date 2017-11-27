@@ -44,8 +44,10 @@ ul li {
     height: 30px;
     line-height: 30px;
     font-size: 18px;
-    width: 180px;
+    width: 170px;
     color: #9a929b;
+    padding-left: 10px;
+
 }
 
 .left_top {
@@ -97,8 +99,8 @@ ul li {
 }
 
 .left_top li:nth-of-type(2)::before {
-    font-family: untitled-font-1;
-    content: "a";
+    font-family:untitled-font-2;
+    content: "b";
     padding-right: 5px;
 
 }
@@ -121,5 +123,5 @@ ul li {
     line-height: 20px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 65px;
+    margin-left: 55px;
 }
