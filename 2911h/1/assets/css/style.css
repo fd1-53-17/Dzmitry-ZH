@@ -41,6 +41,7 @@ H1 {
 
 .menu ul li a {
     font-size: 1.5vw;
+    display: block;
 }
 
 .main {
@@ -52,8 +53,6 @@ H1 {
     background-position: 100% 0;
     background-size: 100px;
     background-repeat: repeat-y;
-    position: absolute;
-    left: 200px;
 }
 
 .main H3 {
@@ -80,32 +79,24 @@ H1 {
 }
 
 .image {
-    width: 200px; /*200px / 760px*/
+    width: 200px;
     float: left;
     margin: 0 2%;
 }
 
 @media screen and (max-width: 320px) {
 
-    body,#page, .top, .bottom, .main, .menu {
-        width: 320px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .main H3, .main p, .menu, .menu p, .menu ul, .menu ul li {
-        margin: 0;
-        padding: 0;
-    }
-
-    #page {
-        height: 410px;
-        /*background-color: red;*/
-    }
-
-    .main img {
+    body, #page, .top, .bottom, .main, .menu, .main img {
         width: 100%;
         margin: 0;
+        padding: 0;
+        height: auto;
+        background-size: 10%;
+    }
+
+    .main H3, .main p, .menu p, .menu ul, .menu ul li {
+        margin: 0;
+        padding: 0;
     }
 
     .top, .bottom {
@@ -113,26 +104,9 @@ H1 {
         line-height: 20px;
     }
 
-    .bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .main {
-        left: 0;
-        height: 250px;
-        background-image: none;
-    }
-
-    .menu {
-        height: 120px;
-        position: absolute;
-        top: 270px;
-    }
-
     .menu ul li {
+        height: 10px;
         display: block;
-        height: 15px;
         margin-top: 2px;
         text-align: center;
     }
