@@ -1,0 +1,97 @@
+#page {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+label {
+    text-decoration: underline;
+    color: blue;
+}
+
+#menu ~ ul {
+    display: none;
+}
+
+#menu:not(:checked) ~ label[for=menu]:nth-of-type(2) {
+    display: none;
+}
+
+#menu:checked + label[for=menu] {
+    display: none;
+}
+
+#menu:checked ~ ul {
+    display: block;
+}
+
+.first {
+    border: 1px solid #79fa7a;
+    width: 100px;
+    padding: 0;
+    counter-reset: list;
+    position: relative;
+}
+
+.second {
+    display: none;
+    border: 1px solid #797afa;
+    width: 100px;
+    padding: 0;
+    counter-reset: list2;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+
+ul.first > li:hover {
+    background-color: #79fa7a;
+}
+
+ul.second > li:hover {
+    background-color: #797afa;
+}
+
+ul.first > li:nth-of-type(2):hover:before {
+    content: "\003E";
+    float: right;
+}
+
+ul.first > li > a {
+    color: blue;
+}
+
+ul.second > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.first > li:after {
+    counter-increment: list;
+    content: " " counter(list);
+    color: blue;
+    text-decoration: underline;
+}
+
+ul.second li:after {
+    counter-increment: list2;
+    content: " 2." counter(list2);
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+ul.first > li:nth-of-type(2):hover ul.second {
+    display: block;
+}
