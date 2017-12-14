@@ -1,8 +1,11 @@
 
 .chessTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 90vmin;
     height: 90vmin;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: absolute;
     left:50%;
@@ -13,14 +16,15 @@
 }
 
 .chessTable>div {
+    -ms-flex-preferred-size: 9vmin;
     flex-basis: 9vmin;
     /*outline: 1px solid silver;*/
     font-size: 18px;
 }
 
 .black{
-     background-color: rgba(91, 90, 88, 0.86);
- }
+    background-color: rgba(91, 90, 88, 0.86);
+}
 
 .white{
     background-color: #deddd9;
@@ -139,6 +143,3 @@
     margin-left: 4vmin;
     margin-bottom: 5vmin;
 }
-
-
-
