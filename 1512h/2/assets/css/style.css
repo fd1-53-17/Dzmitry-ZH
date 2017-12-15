@@ -120,6 +120,7 @@ article > ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 article > ul > li {
@@ -127,7 +128,6 @@ article > ul > li {
     flex-basis: 17%;
     height: 120px;
     background-color: #dcdcdc;
-    margin-right: 20px;
 
 }
 
