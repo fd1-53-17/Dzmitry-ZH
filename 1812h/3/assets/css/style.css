@@ -1,0 +1,146 @@
+#page {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /*border: 1px solid black;*/
+}
+
+.ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background:-webkit-gradient(linear,left top, left bottom,from(rgb(0, 196, 244)),to(rgb(60, 3, 120)));
+    background:-webkit-linear-gradient(top,rgb(0, 196, 244),rgb(60, 3, 120));
+    background:-o-linear-gradient(top,rgb(0, 196, 244),rgb(60, 3, 120));
+    background:linear-gradient(to bottom,rgb(0, 196, 244),rgb(60, 3, 120));
+    border-radius: 50%;
+    -webkit-animation: jump 2s linear infinite,
+    move 5s linear infinite alternate;
+    animation: jump 2s linear infinite,
+    move 5s linear infinite alternate;
+}
+
+.shadow{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 0;
+    margin-bottom: -20px;
+    border-radius: 50%;
+    -webkit-animation: move 5s linear infinite alternate,
+    shadow 2s linear infinite;
+    animation: move 5s linear infinite alternate,
+    shadow 2s linear infinite;
+}
+
+@keyFrames jump{
+    0%{
+        bottom: 75%;
+    }
+
+    55%{
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    65%{
+        bottom: 0;
+        width: 110px;
+        height: 50px;
+    }
+
+    70%{
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    100%{
+        bottom: 75%;
+
+    }
+}
+
+@-webkit-keyframes move{
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 85%;
+    }
+}
+
+@keyframes move{
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 85%;
+    }
+}
+
+@-webkit-keyframes shadow {
+
+    0%{
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        -webkit-transform: scale(1.2) skewX(10deg);
+        transform: scale(1.2) skewX(10deg);
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    65%{
+        background-color: black;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+
+    100%{
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        -webkit-transform: scale(1.2) skewX(10deg);
+        transform: scale(1.2) skewX(10deg);
+        background-color: rgba(0, 0, 0, 0.45);
+
+    }
+
+}
+
+@keyframes shadow {
+
+    0%{
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        -webkit-transform: scale(1.2) skewX(10deg);
+        transform: scale(1.2) skewX(10deg);
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    65%{
+        background-color: black;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+    }
+
+    100%{
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        -webkit-transform: scale(1.2) skewX(10deg);
+        transform: scale(1.2) skewX(10deg);
+        background-color: rgba(0, 0, 0, 0.45);
+
+    }
+
+}
