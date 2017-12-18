@@ -1,0 +1,145 @@
+
+.chessTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vmin;
+    height: 90vmin;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -45vmin;
+    margin-top: -45vmin;
+    counter-reset: left right 9;
+}
+
+.chessTable>div {
+    -ms-flex-preferred-size: 9vmin;
+    flex-basis: 9vmin;
+    /*outline: 1px solid silver;*/
+    font-size: 18px;
+}
+
+.black{
+    background-color: rgba(91, 90, 88, 0.86);
+}
+
+.white{
+    background-color: #deddd9;
+}
+
+.chessTable>div:nth-of-type(10n+1):not(:nth-of-type(1)):not(:nth-of-type(91))::after{
+    counter-increment: left;
+    content: counter(left)"";
+    position: absolute;
+    margin-left: 7vmin;
+    line-height: 9vmin;
+}
+
+.chessTable>div:nth-of-type(10n):not(:nth-of-type(10)):not(:nth-of-type(100))::after{
+    counter-increment: right -1;
+    content: counter(right)"";
+    position: absolute;
+    margin-right: 7vmin;
+    line-height: 9vmin;
+}
+
+.chessTable>div:nth-of-type(2)::before{
+    content: "A";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(3)::before{
+    content: "B";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(4)::before{
+    content: "C";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(5)::before{
+    content: "D";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(6)::before{
+    content: "E";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(7)::before{
+    content: "F";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(8)::before{
+    content: "G";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+.chessTable>div:nth-of-type(9)::before{
+    content: "H";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-top: 5vmin;
+}
+
+.chessTable>div:nth-of-type(92)::before{
+    content: "A";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(93)::before{
+    content: "B";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(94)::before{
+    content: "C";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(95)::before{
+    content: "D";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(96)::before{
+    content: "E";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(97)::before{
+    content: "F";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(98)::before{
+    content: "G";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
+.chessTable>div:nth-of-type(99)::before{
+    content: "H";
+    position: absolute;
+    margin-left: 4vmin;
+    margin-bottom: 5vmin;
+}
