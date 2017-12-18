@@ -1,0 +1,86 @@
+.figure {
+    clear: both;
+}
+
+#block {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: deeppink;
+    margin: 0 auto;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid transparent;
+    border-right: 300px solid green;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    margin: 0 auto;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    width: 50px;
+    line-height: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+#block:target {
+    display: block;
+}
+
+#circle:target {
+    display: block;
+
+}
+
+#triangle:target {
+    display: block;
+}
+
+#block:not(:target) {
+    display: none;
+}
+
+#circle:not(:target) {
+    display: none;
+}
+
+#triangle:not(:target) {
+    display: none;
+}
+
+#block:not(:target) ~ #triangle,
+#circle:not(:target) ~ #triangle {
+    display: block;
+}
+
+#block:target ~ #triangle,
+#circle:target ~ #triangle
+{
+    display: none;
+}
