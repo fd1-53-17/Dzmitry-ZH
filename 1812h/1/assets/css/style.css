@@ -1,0 +1,68 @@
+#page {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    width: 60vw;
+    margin: auto;
+    background: #ddd;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*min-height: min-content;*/
+}
+
+span {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Stark;
+}
+
+iframe {
+    width: 40vw;
+    height: 25vw;
+}
+
+a {
+    margin: 10px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+@font-face {
+    font-family: "Stark";
+    src: url("../fonts/StarkRegular.eot"),
+    url("../fonts/StarkRegular.ttf"),
+    url("../fonts/StarkRegular.woff");
+    font-style: normal;
+    font-weight: normal;
+}
