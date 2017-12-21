@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var i;
+    var array = [];
+    var a = "";
+    for (; i !== null;) {
+        i = prompt("Введи что-нибудь");
+        array.push(i);
+    }
+
+	if (i!==null){
+	array.push(i);
+	}
+    for (i = array.length - 2; i >= 0; i--) {
+        a = a + (array[i]);
+    }
+    console.log(a);
+    alert(a);
+</script>
+</body>
+</html>
