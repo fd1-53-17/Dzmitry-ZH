@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var auto = [
+
+        {brand: "Lamborghini", model: "Urus", color: "red", fuel: 12, price: 15, seats: 4, year: 2012},
+        {brand: "Audi", model: "Q8", color: "blue", fuel: 10, price: 5, seats: 4, year: 2017},
+        {brand: "BMW", model: "X6", color: "black", fuel: 10, price: 7, seats: 4, year: 2008},
+        {brand: "Geely", model: "ATLAS", color: "black", fuel: 6, price: 1.5, seats: 4, year: 2017},
+        {brand: "Lada", model: "Vesta", color: "Grey", fuel: 7, price: 1.5, seats: 5, year: 2015},
+        {brand: "Volkswagen", model: "Polo", color: "silver", fuel: 5.9, price: 2, seats: 4, year: 2014},
+        {brand: "Skoda", model: "Superb", color: "silver", fuel: 6.1, price: 2.5, seats: 5, year: 2016},
+        {brand: "Renault", model: "Megane", color: "yellow", fuel: 6.6, price: 1, seats: 5, year: 2013},
+        {brand: "Opel", model: "Zafira", color: "white", fuel: 6, price: 2, seats: 7, year: 2017},
+        {brand: "Mercedes", model: "Vito", color: "green", fuel: 8, price: 2, seats: 9, year: 2016}
+
+    ];
+
+    var old_auto = auto[0].year;
+    var new_auto = auto[0].year;
+    var cheap_auto = auto[0].price;
+    var economic_auto = auto[0].fuel;
+    var expensive_auto = auto[0].price;
+
+    for (var i = 0; i < auto.length; i++) {
+        if (auto[i].year < old_auto) {
+            old_auto = auto[i].year;
+            console.log("Самый старый автомобиль: " + auto[i].brand + " " + auto[i].model + " " + auto[i].year);
+            continue;
+        }
+
+        if (auto[i].year > new_auto) {
+            new_auto = auto[i].year;
+            console.log("Самый новый автомобиль: " + auto[i].brand + " " + auto[i].model + " " + auto[i].year);
+            continue;
+        }
+
+        if (auto[i].price < cheap_auto) {
+            cheap_auto = auto[i].price;
+            continue;
+        }
+
+        if (auto[i].price > expensive_auto) {
+            expensive_auto = auto[i].price;
+            continue;
+        }
+
+        if (auto[i].fuel < economic_auto) {
+            economic_auto = auto[i].fuel;
+        }
+    }
+
+    var difference = new_auto - old_auto;
+    console.log("Разница в возрасте: " + difference + " лет");
+
+    for (i = 0; i < auto.length; i++) {
+        if (auto[i].price == cheap_auto) {
+            console.log("Самый дешевый автомобиль: " + auto[i].brand + " " + auto[i].model + " Его цена: " + auto[i].price + " биткоинов");
+        }
+
+        if (auto[i].fuel == economic_auto) {
+            console.log("Самый экономичный автомобиль: " + auto[i].brand + " " + auto[i].model + " Его расход: " + auto[i].fuel + "л/100км");
+        }
+    }
+
+    var exploitation = 10;
+    var run = 20000;
+    var fuel_price = 0.001;
+    var total_cost = auto[0].fuel * fuel_price * run / 100 * exploitation + auto[0].price;
+    // console.log(total_cost);
+    for (i = 0; i < auto.length; i++) {
+        if (auto[i].fuel * fuel_price * run / 100 * exploitation + auto[i].price < total_cost) {
+            total_cost = auto[i].fuel * fuel_price * run / 100 * exploitation + auto[i].price;
+            // console.log()
+        }
+
+    }
+
+
+    for (i = 0; i < auto.length; i++) {
+        if (auto[i].fuel * fuel_price * run / 100 * exploitation + auto[i].price == total_cost) {
+            console.log("Самый выгодный автомобиль: " + auto[i].brand + " " + auto[i].model);
+        }
+    }
+
+    var income = 1;
+
+    for (i = 0; i < auto.length; i++) {
+        if (auto[i].price == expensive_auto) {
+            console.log("самый дорогой автомобиль:" + auto[i].brand + " " + auto[i].model + " Его цена: " + auto[i].price + " биткоинов");
+            console.log("Количество лет работы: " + auto[i].price / income);
+        }
+    }
+</script>
+</body>
+</html>
