@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt("Введите строку:");
+    palindrome(str);
+
+    function palindrome(param1) {
+        param1 = param1.replace(/[\s,.:;!?ь]/g, "").toLowerCase();
+        param1 = param1.replace(/ё/g, "е").toLowerCase();
+        strReverse = param1.split('').reverse().join('');
+        if (strReverse == param1) {
+            alert("Строка палиндром");
+        } else {
+            alert("Строка не палиндром");
+        }
+    }
+</script>
+</body>
+</html>
