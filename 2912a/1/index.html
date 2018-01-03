@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer>
+        alert("1244");
+        function clicklistener(element) {
+            console.log("нажат элемент:" + element);
+            console.log(element);
+            var btn = document.getElementById("button");
+            btn.style.height = "50px";
+            btn.width = "100px";
+            btn.className = "class1";
+
+        }
+    </script>
+
+    <style>
+        .class1{
+            border-radius: 50%;
+            border: none;
+        }
+    </style>
+</head>
+<body onload="alert('text');" onmousemove="console.log('мышка сдвинута');" onclick="clicklistener('body');">
+<p id="window" onclick="clicklistener(window)">1</p>
+<p>2</p>
+<button onclick="clicklistener();" id="button" >Push me</button>
+</body>
+</html>
